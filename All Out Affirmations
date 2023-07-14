@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#">HOME</a>
+  <a href="#">BLOG</a>
+  <a href="#">Affirmations</a>
+  <a href="#" class="right">Contact Us</a>
+</div>
+</body>
+</html>
+<body style="background-color:lavender;">
+<div class="header">
+  <h1>All Out Affirmations</h1>
+  <font color="#A6ACAF" size="5">    
+    <marquee><b><i>REMAIN POSITIVE</i></b></marquee>    
+</font> 
+  <p>Affirming positive statements changes lives.</p>
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>All Out Affirmations!</title>
+<meta name="positive affirmations" content="Example" />
+</head>
+<body>
+<p>Designed to assist with changing a negative mindset into a positive mindset.  We desire to inspire you.  
+When you declare positiveness you confirm and manifest your desires!
+		<h3>Daily Affirmations</h3><style>
+img {
+  border: 5px solid #555;
+}
+</style>
+    <button type="button" onclick="alert('Hello world!')">Positive Affirmations!</button>
+		<img src="https://wallpapercave.com/wp/wp7044769.jpg" alt="Affirmations" width="300" height="300">
+		<div>
+			<p>What are some helpful affirmations?</p>
+			<ul>
+				<li><span><b>Health<b/></span>: I am healthy</li>
+				<li><span><b>Career<b/></span>: I have a great career.</li>
+				<li><span><b>Money<b/></span>: I am abundant and rich.</li>
+				<li><span><b>Happiness<b/></span>: I am happy with my life.</li>
+			 </ul>
+			<p>One can shift their own mindset be speaking positive statements.</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Health', 8],
+  ['Career', 3],
+  ['Money', 3],
+  ['Happiness', 3],
+  ['Sleep', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Affirmations', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 
+
+<div class="about-section">...
+<p style="font-size: 20px; color:#1F9AFE;">
+<a href="./new-file.html">About this site</a>
+</p>
+...
+
+  <audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="https://chi-nese.com/wp-content/uploads/2017/09/Daily%20Affirmations%20to%20Raise%20Your%20Vibration%20(chi-nese.com).mp3" type="audio/mpeg">
+
+</audio>
+  <p>Affirmations for all in need.</p>
+  <p>We offer positivity throughout our website.</p>
+</div>
+
+            <font color="#FF0000">All Rights Reserved@copyrights 2023</font>    
+    </font>    
+    </b>    
+    </center>    
+</body>    
+</html> 
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>All Out Affirmations</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>WELCOME TO AOA BLOG</h2>
+      <h5>Positive Affirmations for Everyone, Jul 7, 2023</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Health Affirmations.</p>
+      <p>I am healthy.</p>
+    </div>
+    <div class="card">
+      <h2>WELCOME TO AOA BLOG</h2>
+      <h5>Career Affirmations for Everyone, July 6, 2023</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Career Affirmations</p>
+      <p>I have a great Career.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>For the latest news, please follow us below.</p>
+      <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>All Out Affirmations</h2>
+  <footer>
+  <p>Author: C. King<br>
+  <a href="mailto:ck@alloutaffirmations.com">ck@alloutaffirmations.com</a></p>
+</footer>
+</div>
+
+</body>
+</html>
